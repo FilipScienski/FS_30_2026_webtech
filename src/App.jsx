@@ -30,7 +30,7 @@ const course = {
   name: "React",
   teacher: "JS",
   hours: "20",
-  completed: "..."
+  completed: "Tak"
 };
 
   return(
@@ -61,6 +61,7 @@ const course = {
       <section>
         <h2>{course.name}</h2>
         <p>{course.teacher + " | " + course.hours}</p>
+        <p>Ukończony: {course.completed}</p>
         <p>{Math.round((Math.random() * 100 % 101))}%</p>
       </section>
     </>
