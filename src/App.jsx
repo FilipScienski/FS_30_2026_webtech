@@ -52,7 +52,7 @@ const course = {
 
       <h1>{technology.name}</h1>
       <h2>Kategoria: {technology.category}</h2>
-      <h3>Liczba godzin: {technology.hours}</h3>
+      <h3>Liczba godzin: {technology.hours} </h3>
 
       <p>Uczeń: {student.name + " " + student.surname}</p>
       <p>Klasa: {student.className}</p>
@@ -60,7 +60,7 @@ const course = {
 
       <section>
         <h2>{course.name}</h2>
-        <p>{course.teacher + " | " + course.hours}</p>
+        <p>{course.teacher + " | " + course.hours} h</p>
         <p>Ukończony: {course.completed}</p>
         <p>{Math.round((Math.random() * 100 % 101))}%</p>
       </section>
