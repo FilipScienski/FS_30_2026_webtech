@@ -11,8 +11,8 @@ export default function App()
 };
 
 const student = {
-  name: "...",
-  surname: "...",
+  name: "Filip",
+  surname: "Ścieński",
   className: "4P",
   specialization: "technik programista"
 };
