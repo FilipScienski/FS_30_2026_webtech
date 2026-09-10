@@ -3,6 +3,15 @@ import './App.css'
 export default function App()
 {
 
+
+    const app = {
+    name: "WebTech",
+    version: "1.0",
+    author: "Filip Ścieński",
+    technologiesCount: 3
+  };
+
+
   const technology = {
   name: "React",
   category: "Frontend",
@@ -18,14 +27,29 @@ const student = {
 };
 
 const course = {
-  name: "...",
-  teacher: "...",
-  hours: "...",
+  name: "React",
+  teacher: "JS",
+  hours: "20",
   completed: "..."
 };
 
   return(
     <>
+    
+      <div>
+
+      <h1>{app.name}</h1>
+
+      <p>Wersja: {app.version}</p>
+
+      <p>Autor: {app.author}</p>
+
+      <p>
+        Liczba technologii: {app.technologiesCount}
+      </p>
+
+    </div>
+
       <h1>{technology.name}</h1>
       <h2>Kategoria: {technology.category}</h2>
       <h3>Liczba godzin: {technology.hours}</h3>
@@ -37,7 +61,7 @@ const course = {
       <section>
         <h2>{course.name}</h2>
         <p>{course.teacher + " | " + course.hours}</p>
-        <p>{course.completed}</p>
+        <p>{Math.round((Math.random() * 100 % 101))}%</p>
       </section>
     </>
   );
