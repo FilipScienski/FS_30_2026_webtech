@@ -53,39 +53,16 @@ function App() {
 
   return (
     <>
-      <Header />
+    
+      {technologies.map((technology) => (
+  <Technology
+    key={technology.id}
+    name={technology.name}
+    category={technology.category}
+    hours={technology.hours}
+  />
+))}
 
-      <main>
-        {technologies.map((technology) => (
-          <Technology
-            key={technology.id}
-            name={technology.name}
-            category={technology.category}
-            hours={technology.hours}
-          />
-        ))}
-        <section style={{ borderTop: "2px solid white", margin: "2em 0" }}>
-          {students.map(v => {
-            return (<Student name={v.name} className={v.className} spec={v.spec} age={v.age} key={v.id} />)
-          })}
-        </section>
-
-        <section style={{ borderTop: "2px solid white", margin: "2em 0" }}>
-          {books.map(v => {
-            return (<Book key={v.id} title={v.title} author={v.author} />)
-          })}
-          <hr />
-          {books.map(v => (
-            <Book key={v.id} title={v.title} author={v.author} />
-          ))}
-        </section>
-
-        <section>
-          <Lekcja6 />
-        </section>
-      </main>
-
-      <Footer />
     </>
   );
 }
