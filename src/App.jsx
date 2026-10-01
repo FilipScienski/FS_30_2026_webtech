@@ -3,6 +3,7 @@ import Technology from "./components/Technology";
 import Footer from "./components/Footer";
 import Student from "./components/Student";
 import Book from "./components/Book";
+import Lekcja6 from "./components/Lekcja6";
 
 function App() {
 
@@ -77,6 +78,10 @@ function App() {
           {books.map(v => (
             <Book key={v.id} title={v.title} author={v.author} />
           ))}
+        </section>
+
+        <section>
+          <Lekcja6 />
         </section>
       </main>
 
