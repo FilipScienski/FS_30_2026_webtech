@@ -33,6 +33,8 @@ const course = {
   completed: "Tak"
 };
 
+
+
   return(
     <>
     
