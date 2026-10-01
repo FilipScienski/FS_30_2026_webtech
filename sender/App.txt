@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Technology from "./components/Technology";
 import Footer from "./components/Footer";
 import Student from "./components/Student";
+import Book from "./components/Book";
 
 function App() {
 
@@ -37,6 +38,11 @@ function App() {
   { id: 2, name: "Jan", className: "4P",age: 16, spec: "Programowanie" },
   { id: 3, name: "Adam", className: "4P", age: 17, spec: "Programowanie" }
 ];
+const books = [
+{ id: 1, title: "Wiedźmin", author: "Andrzej Sapkowski" },
+{ id: 2, title: "Hobbit", author: "J.R.R. Tolkien" },
+{ id: 3, title: "Lalka", author: "Bolesław Prus" }
+];
 
   return (
     <>
@@ -56,7 +62,16 @@ function App() {
             return(<Student name={v.name} className={v.className} spec={v.spec} age={v.age} key={v.id} />)
           })}
         </section>
-        
+
+        <section style={{borderTop: "2px solid white", margin: "2em 0"}}>
+          {books.map(v=>{
+            return(<Book key={v.id} title={v.title} author={v.author} />)
+          })}
+          <hr />
+          {books.map(v=>(
+            <Book key={v.id} title={v.title} author={v.author} />
+          ))}
+        </section>
       </main>
 
       <Footer />
