@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
+import User from "./components/User";
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
 
       <main>
         <section>
+        <User name={"Anna"} role={"Administrator"} />
         <Product name={"Telefon"} price={20} fn={selectProduct} />
-        
         </section>
       </main>
 

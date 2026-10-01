@@ -1,10 +1,10 @@
-export default function Product({name, price, fn})
+export default function Product({name, price, onSelect})
 {
     return(
         <>
         <h2>{price}</h2>
         <p>{name}</p>
-        <button type="button" onClick={()=>{fn(name)}} >Pokaż produkt</button>
+        <button type="button" onClick={()=>{onSelect(name)}} >Pokaż produkt</button>
         </>
     );
 }
