@@ -5,6 +5,7 @@ export default function TechnologyCard({data})
 
     const [likes, setLikes] = useState(0);
     const [isLearning, setIsLearning] = useState(false);
+    // 22.10.2026
 
     return(
         <div style={{display: "flex", alignItems: "center", gap: "20px"}}>
